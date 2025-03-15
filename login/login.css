@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('1.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.button-container {
+    position: relative;
+    height: 100vh;
+}
+
+.back-button {
+    position: absolute;
+    top: 3%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #0077b6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #005f8b;
+    transform: scale(1.05);
+}
+
+.back-button:focus {
+    outline: none;
+}
+
+.back-button .arrow {
+    margin-right: 8px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background: rgba(42, 18, 75, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #0077b6;
+}
+
+.login-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #00b4d8;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 10px 2px #00b4d8;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 16px;
+}
+
+.password-container i {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ff69b4;
+    font-size: 1.2em;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #00b4d8, #0077b6);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.login-button:hover {
+    background: linear-gradient(45deg, #0077b6, #00b4d8);
+    transform: scale(1.05);
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.google {
+    background-color: #ede5e4;
+    color: rgb(9, 7, 7);
+}
+
+.apple {
+    background-color: #000;
+    color: white;
+}
+
+.google:hover {
+    background-color: #e6f0f3;
+    color: rgb(21, 164, 240);
+}
+
+.apple:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #000000;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.links a {
+    color: #fb5283;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.hal {
+    bottom: 0;
+    left: 0;
+}
+
+.hal2 {
+    bottom: 0;
+    right: 0;
+}
+
+.hal:hover, .hal2:hover {
+    color: #ff80ab;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 55%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+    color: white;
+}
+
+.password-container input {
+    width: calc(100% - 0px);
+}
+
+::placeholder {
+    color: grey;
+}
+
+@media (max-width: 600px) {
+    .password-container input {
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .password-container i {
+        font-size: 1em;
+        right: 10px;
+    }
+}
